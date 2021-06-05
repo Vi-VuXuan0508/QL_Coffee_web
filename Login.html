@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-left"></div>
+
+        <div class="box-right">
+            <form class="login-form" action="index.html" onsubmit="return validate1()">
+                <h1>Login Form</h1>
+                <input type="text" placeholder="Username" name="user" class="input-t" required><br><br>
+                <input type="password" placeholder="Password" name="pass" class="input-t" required><br><br>
+                <input type="checkbox" class="check"> <a>Remember me?</a><br><br>
+                <a id="logintext1">
+                    <button type="submit" class="btn-login">Login</button>
+                </a><br><br>
+                <p>Don't have an acount? <a id="logintext2" onclick="signUp()">Sign Up?</a></p>
+            </form>
+
+            <form class="signup-form" onsubmit="return validate2()">
+                <h1>Sign Up Form</h1>
+                <input type="text" placeholder="Username" name="username" class="input-t" required><br><br>
+                <input type="email" placeholder="Email" name="email" class="input-t" required><br><br>
+                <input type="password" placeholder="Password" name="password" class="input-t" required><br><br>
+                <p>Already a member? <b onclick="login()" style="cursor: pointer;">Log In</b></p><br>
+                <button type="submit" class="btn-signup">Sign Up</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
